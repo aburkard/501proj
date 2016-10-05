@@ -8,12 +8,15 @@ import pandas as pd
 import numpy as np
 
 def main(argv):
-    
-def pull_tweets(auth):
+    output_file_name = pull_tweets()
+    generate_features(output_file_name, output_file_name)
+    analyze_twitter_data(output_file_name)
+
+def pull_tweets():
     config = configparser.ConfigParser()
     config.read('config.ini')
 
-    num_tweets = config['twitter']['num_tweets']
+    num_tweets = int(config['twitter']['num_tweets'])
     output_file = config['twitter']['output_file']
     coordinates = config['twitter']['coordinates']
 
@@ -27,6 +30,10 @@ def pull_tweets(auth):
 
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
+    def handle_status(status, w):
+        w.writerow(status)
+        #print(json.dumps(status))
+
     with open(output_file, 'w') as f:
         for status in tweepy.Cursor(api.search,  geocode=coordinates).items(1):
             w = csv.DictWriter(f, status._json.keys(), extrasaction='ignore')
@@ -34,13 +41,23 @@ def pull_tweets(auth):
         for status in tweepy.Cursor(api.search,  geocode=coordinates).items(num_tweets):
             handle_status(status._json, w)
 
-    def handle_status(status, w):
-        w.writerow(status)
-        #print(json.dumps(status))
+    
+    return output_file
 
+def generate_features(input_file, output_file):
+    df = pd.read_csv(input_file , sep=',', encoding='utf-8')
+    lat = df["geo"].apply(lambda x:  eval(x)['coordinates'][0] if pd.notnull(x) else np.nan)
+    lon = df["geo"].apply(lambda x:  eval(x)['coordinates'][1] if pd.notnull(x) else np.nan)
+    user_id = df["user"].apply(lambda x:  eval(x)['id_str'] if pd.notnull(x) else np.nan)
+    df['lat']=lat
+    df['lon']=lon
+    df['user_id'] = user_id
+    df.to_csv(output_file , sep=',', encoding='utf-8')
 
 def analyze_twitter_data(file_name):
     df = pd.read_csv(file_name , sep=',', encoding='utf-8')
+    null_percentages = df.isnull().sum()/len(df.index)
+    print("Percentage of null values:\n{}".format(null_percentages))
 
 if __name__ == "__main__":
     main(sys.argv)
