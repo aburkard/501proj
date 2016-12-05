@@ -1,16 +1,18 @@
 # 501proj
 
 
-Note the Twitter script requires the tweepy package:
-	
-	pip install tweepy
+Note the Twitter script requires the tweepy and elasticsearch packages:
 
-Twitter API settings are defined in config.ini. We've included an API key for a dummy Twitter account. To pull tweets, generate new attributes, and output cleanliness data just run: 
-    
-    py pull_tweets.py 
+	pip install tweepy
+	pip install elasticsearch
+	pip install certifi
+
+Twitter API settings are defined in config.ini. We've included an API key for a dummy Twitter account. To pull tweets, generate new attributes, and output cleanliness data just run:
+
+    py pull_tweets.py
 
 For the Chicago crime data:
-    
+
     py chicago_crime.py
 
 
