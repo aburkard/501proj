@@ -1,0 +1,1003 @@
+The variables, data types, and non-missing values are:
+NoneThe number of records in the dataset is:218044
+
+NoneThe summary statistics of the data are:
+                beat  community_area       district   incident_id  \
+count  218044.000000   218044.000000  218044.000000  2.180440e+05   
+mean     1145.474143       36.992584      11.225615  1.052386e+07   
+std       689.983143       21.357948       6.892552  5.602007e+05   
+min       111.000000        1.000000       1.000000  2.224500e+04   
+25%       613.000000       23.000000       6.000000  1.046228e+07   
+50%      1031.000000       32.000000      10.000000  1.055296e+07   
+75%      1711.000000       55.000000      17.000000  1.064502e+07   
+max      2535.000000       77.000000      31.000000  1.073779e+07   
+
+            latitude      longitude     location_1     location_2  \
+count  207043.000000  207043.000000  207043.000000  207043.000000   
+mean       41.843499     -87.671843     -87.671843      41.843499   
+std         0.085305       0.058874       0.058874       0.085305   
+min        41.644608     -87.928909     -87.928909      41.644608   
+25%              NaN            NaN            NaN            NaN   
+50%              NaN            NaN            NaN            NaN   
+75%              NaN            NaN            NaN            NaN   
+max        42.022671     -87.524529     -87.524529      42.022671   
+
+                ward       x_coord       y_coord      year  domesticArrest  \
+count  218044.000000  2.070430e+05  2.070430e+05  218044.0   218044.000000   
+mean       22.982082  1.164503e+06  1.886261e+06    2016.0        0.027774   
+std        13.927353  1.617221e+04  3.101844e+04       0.0        0.164326   
+min         1.000000  1.094231e+06  1.813910e+06    2016.0        0.000000   
+25%        10.000000           NaN           NaN    2016.0        0.000000   
+50%        23.000000           NaN           NaN    2016.0        0.000000   
+75%        34.000000           NaN           NaN    2016.0        0.000000   
+max        50.000000  1.205117e+06  1.951535e+06    2016.0        1.000000   
+
+          indexCrime    recentCrime     time_crime    day_of_week  \
+count  218044.000000  218044.000000  218044.000000  218044.000000   
+mean        0.428822       0.188489      13.441959       4.017804   
+std         0.494909       0.391103       6.640656       2.001642   
+min         0.000000       0.000000       0.000000       1.000000   
+25%         0.000000       0.000000       9.000000       2.000000   
+50%         0.000000       0.000000      14.250000       4.000000   
+75%         1.000000       0.000000      19.000000       6.000000   
+max         1.000000       1.000000      23.983333       7.000000   
+
+       day_of_week_time  
+count     218044.000000  
+mean           4.577885  
+std            2.010135  
+min            1.000000  
+25%            2.791667  
+50%            4.652778  
+75%            6.333333  
+max            7.999306  
+The medians are:
+41.862647019
+-87.665729953
+-87.66573000000002
+41.862647
+1166170.0
+1893202.0
+The frequency counts of categorical variables are:
+0    1834
+dtype: int64
+0    25
+dtype: int64
+0    42
+dtype: int64
+0    False
+dtype: bool
+0    SIMPLE
+dtype: object
+0    06
+dtype: object
+0    0486
+dtype: object
+0    STREET
+dtype: object
+0    Point
+dtype: object
+0    THEFT
+dtype: object
+0    0
+dtype: int64
+0    0
+dtype: int64
+0    0
+dtype: int64
+0    5
+dtype: int64
+0    (41.871, 41.909]
+dtype: category
+Categories (10, object): [(41.644, 41.682] < (41.682, 41.72] < (41.72, 41.758] < (41.758, 41.796] ... (41.871, 41.909] < (41.909, 41.947] < (41.947, 41.985] < (41.985, 42.0227]]
+community_area
+1      3000
+2      2630
+3      2953
+4      1592
+5      1105
+6      4963
+7      3393
+8      8415
+9       243
+10     1055
+11      855
+12      454
+13      795
+14     1940
+15     2622
+16     2412
+17     1429
+18      543
+19     3855
+20     1289
+21     1858
+22     4378
+23     6534
+24     6591
+25    13567
+26     4743
+27     4137
+28     7633
+29     6994
+30     3892
+      ...  
+48     1140
+49     5508
+50      993
+51     1542
+52     1088
+53     3179
+54     1032
+55      458
+56     1715
+57      703
+58     2180
+59      866
+60     1383
+61     4027
+62      891
+63     1930
+64      793
+65     1749
+66     4808
+67     5752
+68     5214
+69     5388
+70     2114
+71     6232
+72      769
+73     2673
+74      487
+75     1558
+76     1303
+77     1971
+dtype: int64district
+1     11095
+2      9186
+3     10115
+4     12194
+5      9416
+6     13142
+7     11714
+8     14194
+9     10400
+10    10237
+11    15070
+12    11305
+14     8300
+15     9263
+16     7447
+17     6274
+18    10510
+19     9986
+20     3576
+22     6917
+24     5948
+25    11752
+31        3
+dtype: int64ward
+1      4214
+2      9338
+3      5764
+4      3977
+5      4873
+6      7054
+7      5568
+8      5775
+9      5574
+10     3721
+11     2839
+12     2839
+13     2923
+14     2903
+15     5053
+16     5628
+17     7176
+18     3792
+19     1859
+20     6378
+21     6777
+22     2608
+23     2736
+24     9770
+25     3061
+26     3296
+27     8218
+28    10308
+29     5106
+30     2809
+31     2857
+32     3778
+33     2026
+34     5361
+35     2681
+36     2410
+37     5505
+38     2286
+39     2100
+40     2207
+41     2509
+42    11718
+43     2930
+44     3568
+45     2253
+46     2834
+47     2123
+48     1997
+49     2828
+50     2136
+dtype: int64arrest
+False    176373
+True      41671
+dtype: int64description
+$500 AND UNDER                                                 19887
+ABUSE/NEGLECT: CARE FACILITY                                       3
+AGG CRIM SEX ABUSE FAM MEMBER                                    109
+AGG CRIMINAL SEXUAL ABUSE                                        148
+AGG PO HANDS ETC SERIOUS INJ                                      16
+AGG PO HANDS NO/MIN INJURY                                       706
+AGG PRO EMP HANDS SERIOUS INJ                                     30
+AGG PRO.EMP: HANDGUN                                              26
+AGG PRO.EMP: OTHER DANG WEAPON                                    80
+AGG PRO.EMP: OTHER FIREARM                                         3
+AGG PRO.EMP:KNIFE/CUTTING INST                                    40
+AGG SEX ASSLT OF CHILD FAM MBR                                    36
+AGG: HANDS/FIST/FEET NO/MINOR INJURY                             106
+AGG: HANDS/FIST/FEET SERIOUS INJURY                              133
+AGGRAVATED                                                       591
+AGGRAVATED COMPUTER TAMPERING                                      1
+AGGRAVATED DOMESTIC BATTERY: HANDGUN                               9
+AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY      198
+AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST                  616
+AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON                   901
+AGGRAVATED FINANCIAL IDENTITY THEFT                               83
+AGGRAVATED OF A CHILD                                             45
+AGGRAVATED OF A SENIOR CITIZEN                                   135
+AGGRAVATED PO: HANDGUN                                            52
+AGGRAVATED PO: KNIFE/CUT INSTR                                     8
+AGGRAVATED PO: OTHER DANG WEAP                                    96
+AGGRAVATED PO: OTHER FIREARM                                       1
+AGGRAVATED PO:KNIFE/CUT INSTR                                     30
+AGGRAVATED VEHICULAR HIJACKING                                   279
+AGGRAVATED: HANDGUN                                             4729
+                                                               ...  
+TO STATE SUP LAND                                                490
+TO STATE SUP PROP                                                111
+TO VEHICLE                                                     13371
+TRUCK, BUS, MOTOR HOME                                           213
+UNAUTHORIZED VIDEOTAPING                                          30
+UNLAWFUL ENTRY                                                  3810
+UNLAWFUL INTERFERE/VISITATION                                     60
+UNLAWFUL POSS AMMUNITION                                          59
+UNLAWFUL POSS OF HANDGUN                                        2013
+UNLAWFUL POSS OTHER FIREARM                                       66
+UNLAWFUL RESTRAINT                                                33
+UNLAWFUL SALE HANDGUN                                              2
+UNLAWFUL SALE/DELIVERY OF FIREARM AT SCHOOL                        1
+UNLAWFUL USE HANDGUN                                             241
+UNLAWFUL USE OF A COMPUTER                                         7
+UNLAWFUL USE OF RECORDED SOUND                                    10
+UNLAWFUL USE OTHER DANG WEAPON                                   119
+UNLAWFUL USE OTHER FIREARM                                        44
+UNLAWFUL USE/SALE AIR RIFLE                                       31
+VEHICLE TITLE/REG OFFENSE                                        408
+VEHICULAR HIJACKING                                              192
+VIO BAIL BOND: DOM VIOLENCE                                       15
+VIOLATE ORDER OF PROTECTION                                     1378
+VIOLATION GPS MONITORING DEVICE                                    5
+VIOLATION OF CIVIL NO CONTACT ORDER                               54
+VIOLATION OF SMOKING BAN                                           1
+VIOLATION OF STALKING NO CONTACT ORDER                             8
+VIOLENT OFFENDER: ANNUAL REGISTRATION                             27
+VIOLENT OFFENDER: DUTY TO REGISTER                                12
+VIOLENT OFFENDER: FAIL TO REGISTER NEW ADDRESS                     4
+dtype: int64fbi_code
+01A      598
+01B        2
+02      1273
+03      9484
+04A     4763
+04B     6797
+05     11296
+06     49795
+07      9059
+08A    11051
+08B    35261
+09       437
+10      1391
+11     12216
+12        33
+13        43
+14     25660
+15      2867
+16       724
+17       966
+18     10459
+19       182
+20      1765
+22       201
+24      1844
+26     19877
+dtype: int64iucr
+0110     597
+0130       1
+0142       2
+0261      54
+0263      21
+0264      14
+0265     177
+0266      95
+0271       1
+0272       1
+0273       5
+0274       1
+0275       9
+0281     770
+0291      51
+0312     401
+0313     393
+031A    3706
+031B      46
+0320    3087
+0325     192
+0326     279
+0330     518
+0331      66
+0334      77
+0337      55
+033A     336
+033B      11
+0340     317
+041A    2243
+        ... 
+4651     137
+4652      13
+4800       2
+4860       5
+5000     277
+5001     183
+5002    1007
+5003      10
+5004      23
+5007     136
+5009       1
+500E       6
+500N       3
+5011     474
+501A     126
+501H       1
+502P     536
+502R     408
+502T      16
+5073       1
+5093      24
+5094       1
+5110      68
+5111     100
+5112       5
+5114      17
+5121       4
+5130      12
+5131      27
+5132       4
+dtype: int64location_description
+ABANDONED BUILDING                                   405
+AIRCRAFT                                              89
+AIRPORT BUILDING NON-TERMINAL - NON-SECURE AREA       76
+AIRPORT BUILDING NON-TERMINAL - SECURE AREA           60
+AIRPORT EXTERIOR - NON-SECURE AREA                    71
+AIRPORT EXTERIOR - SECURE AREA                        26
+AIRPORT PARKING LOT                                   62
+AIRPORT TERMINAL LOWER LEVEL - NON-SECURE AREA       143
+AIRPORT TERMINAL LOWER LEVEL - SECURE AREA            49
+AIRPORT TERMINAL MEZZANINE - NON-SECURE AREA           7
+AIRPORT TERMINAL UPPER LEVEL - NON-SECURE AREA        47
+AIRPORT TERMINAL UPPER LEVEL - SECURE AREA           195
+AIRPORT TRANSPORTATION SYSTEM (ATS)                    8
+AIRPORT VENDING ESTABLISHMENT                        113
+AIRPORT/AIRCRAFT                                      23
+ALLEY                                               4377
+ANIMAL HOSPITAL                                       47
+APARTMENT                                          27978
+APPLIANCE STORE                                       61
+ATHLETIC CLUB                                        485
+ATM (AUTOMATIC TELLER MACHINE)                       507
+AUTO                                                  67
+BANK                                                 818
+BAR OR TAVERN                                       1458
+BARBER SHOP/BEAUTY SALON                               1
+BARBERSHOP                                           185
+BOAT/WATERCRAFT                                       31
+BOWLING ALLEY                                         21
+BRIDGE                                                22
+CAR WASH                                              92
+                                                   ...  
+PORCH                                                 15
+RAILROAD PROPERTY                                      1
+RESIDENCE                                          36003
+RESIDENCE PORCH/HALLWAY                             3696
+RESIDENCE-GARAGE                                    4348
+RESIDENTIAL YARD (FRONT/BACK)                       4783
+RESTAURANT                                          4496
+RETAIL STORE                                           5
+SAVINGS AND LOAN                                      10
+SCHOOL YARD                                            1
+SCHOOL, PRIVATE, BUILDING                            465
+SCHOOL, PRIVATE, GROUNDS                             160
+SCHOOL, PUBLIC, BUILDING                            3063
+SCHOOL, PUBLIC, GROUNDS                              916
+SIDEWALK                                           19889
+SMALL RETAIL STORE                                  4652
+SPORTS ARENA/STADIUM                                 292
+STREET                                             49978
+TAVERN                                                 2
+TAVERN/LIQUOR STORE                                  409
+TAXICAB                                              382
+VACANT LOT                                             9
+VACANT LOT/LAND                                      755
+VEHICLE - DELIVERY TRUCK                              17
+VEHICLE - OTHER RIDE SERVICE                          93
+VEHICLE NON-COMMERCIAL                              3839
+VEHICLE-COMMERCIAL                                   186
+VESTIBULE                                              1
+WAREHOUSE                                            199
+YARD                                                  10
+dtype: int64location_type
+Point    207043
+dtype: int64primary_type
+ARSON                                  438
+ASSAULT                              15691
+BATTERY                              42058
+BURGLARY                             11296
+CONCEALED CARRY LICENSE VIOLATION       30
+CRIM SEXUAL ASSAULT                   1199
+CRIMINAL DAMAGE                      25660
+CRIMINAL TRESPASS                     5264
+DECEPTIVE PRACTICE                   13683
+GAMBLING                               182
+HOMICIDE                               600
+HUMAN TRAFFICKING                       10
+INTERFERENCE WITH PUBLIC OFFICER       774
+INTIMIDATION                           106
+KIDNAPPING                             179
+LIQUOR LAW VIOLATION                   201
+MOTOR VEHICLE THEFT                   9059
+NARCOTICS                            10457
+NON - CRIMINAL                           5
+NON-CRIMINAL                            39
+NON-CRIMINAL (SUBJECT SPECIFIED)         1
+OBSCENITY                               40
+OFFENSE INVOLVING CHILDREN            1934
+OTHER NARCOTIC VIOLATION                 3
+OTHER OFFENSE                        14013
+PROSTITUTION                           720
+PUBLIC INDECENCY                        10
+PUBLIC PEACE VIOLATION                1356
+ROBBERY                               9484
+SEX OFFENSE                            790
+STALKING                               131
+THEFT                                49795
+WEAPONS VIOLATION                     2836
+dtype: int64domesticArrest
+0    211988
+1      6056
+dtype: int64indexCrime
+0    124542
+1     93502
+dtype: int64recentCrime
+0    176945
+1     41099
+dtype: int64day_of_week
+1    31305
+2    30840
+3    29793
+4    30574
+5    32809
+6    31708
+7    31015
+dtype: int64latitude10eqwibins
+(41.644, 41.682]      4104
+(41.682, 41.72]      11070
+(41.72, 41.758]      25969
+(41.758, 41.796]     32511
+(41.796, 41.834]     16644
+(41.834, 41.871]     20563
+(41.871, 41.909]     47732
+(41.909, 41.947]     24798
+(41.947, 41.985]     15987
+(41.985, 42.0227]     7665
+dtype: int64
+beat
+111     1446
+112     1474
+113      885
+114      860
+121      661
+122     1368
+123     1230
+124      937
+131      888
+132      618
+133      728
+211      706
+212      826
+213      725
+214      627
+215      450
+221      511
+222      830
+223      626
+224      584
+225      634
+231      685
+232      535
+233      440
+234      667
+235      339
+311      506
+312     1005
+313      694
+314      631
+        ... 
+2221     740
+2222     880
+2223    1001
+2232     800
+2233     652
+2234     811
+2411     711
+2412     695
+2413     905
+2422     892
+2423     487
+2424     588
+2431     455
+2432     578
+2433     638
+2511     575
+2512    1113
+2513     370
+2514     753
+2515     900
+2521     908
+2522     630
+2523     599
+2524     550
+2525     509
+2531     688
+2532     927
+2533    1290
+2534    1083
+2535     859
+dtype: int64community_area
+1      3000
+2      2630
+3      2953
+4      1592
+5      1105
+6      4963
+7      3393
+8      8415
+9       243
+10     1055
+11      855
+12      454
+13      795
+14     1940
+15     2622
+16     2412
+17     1429
+18      543
+19     3855
+20     1289
+21     1858
+22     4378
+23     6534
+24     6591
+25    13567
+26     4743
+27     4137
+28     7633
+29     6994
+30     3892
+      ...  
+48     1140
+49     5508
+50      993
+51     1542
+52     1088
+53     3179
+54     1032
+55      458
+56     1715
+57      703
+58     2180
+59      866
+60     1383
+61     4027
+62      891
+63     1930
+64      793
+65     1749
+66     4808
+67     5752
+68     5214
+69     5388
+70     2114
+71     6232
+72      769
+73     2673
+74      487
+75     1558
+76     1303
+77     1971
+dtype: int64district
+1     11095
+2      9186
+3     10115
+4     12194
+5      9416
+6     13142
+7     11714
+8     14194
+9     10400
+10    10237
+11    15070
+12    11305
+14     8300
+15     9263
+16     7447
+17     6274
+18    10510
+19     9986
+20     3576
+22     6917
+24     5948
+25    11752
+31        3
+dtype: int64ward
+1      4214
+2      9338
+3      5764
+4      3977
+5      4873
+6      7054
+7      5568
+8      5775
+9      5574
+10     3721
+11     2839
+12     2839
+13     2923
+14     2903
+15     5053
+16     5628
+17     7176
+18     3792
+19     1859
+20     6378
+21     6777
+22     2608
+23     2736
+24     9770
+25     3061
+26     3296
+27     8218
+28    10308
+29     5106
+30     2809
+31     2857
+32     3778
+33     2026
+34     5361
+35     2681
+36     2410
+37     5505
+38     2286
+39     2100
+40     2207
+41     2509
+42    11718
+43     2930
+44     3568
+45     2253
+46     2834
+47     2123
+48     1997
+49     2828
+50     2136
+dtype: int64arrest
+False    176373
+True      41671
+dtype: int64description
+$500 AND UNDER                                                 19887
+ABUSE/NEGLECT: CARE FACILITY                                       3
+AGG CRIM SEX ABUSE FAM MEMBER                                    109
+AGG CRIMINAL SEXUAL ABUSE                                        148
+AGG PO HANDS ETC SERIOUS INJ                                      16
+AGG PO HANDS NO/MIN INJURY                                       706
+AGG PRO EMP HANDS SERIOUS INJ                                     30
+AGG PRO.EMP: HANDGUN                                              26
+AGG PRO.EMP: OTHER DANG WEAPON                                    80
+AGG PRO.EMP: OTHER FIREARM                                         3
+AGG PRO.EMP:KNIFE/CUTTING INST                                    40
+AGG SEX ASSLT OF CHILD FAM MBR                                    36
+AGG: HANDS/FIST/FEET NO/MINOR INJURY                             106
+AGG: HANDS/FIST/FEET SERIOUS INJURY                              133
+AGGRAVATED                                                       591
+AGGRAVATED COMPUTER TAMPERING                                      1
+AGGRAVATED DOMESTIC BATTERY: HANDGUN                               9
+AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY      198
+AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST                  616
+AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON                   901
+AGGRAVATED FINANCIAL IDENTITY THEFT                               83
+AGGRAVATED OF A CHILD                                             45
+AGGRAVATED OF A SENIOR CITIZEN                                   135
+AGGRAVATED PO: HANDGUN                                            52
+AGGRAVATED PO: KNIFE/CUT INSTR                                     8
+AGGRAVATED PO: OTHER DANG WEAP                                    96
+AGGRAVATED PO: OTHER FIREARM                                       1
+AGGRAVATED PO:KNIFE/CUT INSTR                                     30
+AGGRAVATED VEHICULAR HIJACKING                                   279
+AGGRAVATED: HANDGUN                                             4729
+                                                               ...  
+TO STATE SUP LAND                                                490
+TO STATE SUP PROP                                                111
+TO VEHICLE                                                     13371
+TRUCK, BUS, MOTOR HOME                                           213
+UNAUTHORIZED VIDEOTAPING                                          30
+UNLAWFUL ENTRY                                                  3810
+UNLAWFUL INTERFERE/VISITATION                                     60
+UNLAWFUL POSS AMMUNITION                                          59
+UNLAWFUL POSS OF HANDGUN                                        2013
+UNLAWFUL POSS OTHER FIREARM                                       66
+UNLAWFUL RESTRAINT                                                33
+UNLAWFUL SALE HANDGUN                                              2
+UNLAWFUL SALE/DELIVERY OF FIREARM AT SCHOOL                        1
+UNLAWFUL USE HANDGUN                                             241
+UNLAWFUL USE OF A COMPUTER                                         7
+UNLAWFUL USE OF RECORDED SOUND                                    10
+UNLAWFUL USE OTHER DANG WEAPON                                   119
+UNLAWFUL USE OTHER FIREARM                                        44
+UNLAWFUL USE/SALE AIR RIFLE                                       31
+VEHICLE TITLE/REG OFFENSE                                        408
+VEHICULAR HIJACKING                                              192
+VIO BAIL BOND: DOM VIOLENCE                                       15
+VIOLATE ORDER OF PROTECTION                                     1378
+VIOLATION GPS MONITORING DEVICE                                    5
+VIOLATION OF CIVIL NO CONTACT ORDER                               54
+VIOLATION OF SMOKING BAN                                           1
+VIOLATION OF STALKING NO CONTACT ORDER                             8
+VIOLENT OFFENDER: ANNUAL REGISTRATION                             27
+VIOLENT OFFENDER: DUTY TO REGISTER                                12
+VIOLENT OFFENDER: FAIL TO REGISTER NEW ADDRESS                     4
+dtype: int64fbi_code
+01A      598
+01B        2
+02      1273
+03      9484
+04A     4763
+04B     6797
+05     11296
+06     49795
+07      9059
+08A    11051
+08B    35261
+09       437
+10      1391
+11     12216
+12        33
+13        43
+14     25660
+15      2867
+16       724
+17       966
+18     10459
+19       182
+20      1765
+22       201
+24      1844
+26     19877
+dtype: int64iucr
+0110     597
+0130       1
+0142       2
+0261      54
+0263      21
+0264      14
+0265     177
+0266      95
+0271       1
+0272       1
+0273       5
+0274       1
+0275       9
+0281     770
+0291      51
+0312     401
+0313     393
+031A    3706
+031B      46
+0320    3087
+0325     192
+0326     279
+0330     518
+0331      66
+0334      77
+0337      55
+033A     336
+033B      11
+0340     317
+041A    2243
+        ... 
+4651     137
+4652      13
+4800       2
+4860       5
+5000     277
+5001     183
+5002    1007
+5003      10
+5004      23
+5007     136
+5009       1
+500E       6
+500N       3
+5011     474
+501A     126
+501H       1
+502P     536
+502R     408
+502T      16
+5073       1
+5093      24
+5094       1
+5110      68
+5111     100
+5112       5
+5114      17
+5121       4
+5130      12
+5131      27
+5132       4
+dtype: int64location_description
+ABANDONED BUILDING                                   405
+AIRCRAFT                                              89
+AIRPORT BUILDING NON-TERMINAL - NON-SECURE AREA       76
+AIRPORT BUILDING NON-TERMINAL - SECURE AREA           60
+AIRPORT EXTERIOR - NON-SECURE AREA                    71
+AIRPORT EXTERIOR - SECURE AREA                        26
+AIRPORT PARKING LOT                                   62
+AIRPORT TERMINAL LOWER LEVEL - NON-SECURE AREA       143
+AIRPORT TERMINAL LOWER LEVEL - SECURE AREA            49
+AIRPORT TERMINAL MEZZANINE - NON-SECURE AREA           7
+AIRPORT TERMINAL UPPER LEVEL - NON-SECURE AREA        47
+AIRPORT TERMINAL UPPER LEVEL - SECURE AREA           195
+AIRPORT TRANSPORTATION SYSTEM (ATS)                    8
+AIRPORT VENDING ESTABLISHMENT                        113
+AIRPORT/AIRCRAFT                                      23
+ALLEY                                               4377
+ANIMAL HOSPITAL                                       47
+APARTMENT                                          27978
+APPLIANCE STORE                                       61
+ATHLETIC CLUB                                        485
+ATM (AUTOMATIC TELLER MACHINE)                       507
+AUTO                                                  67
+BANK                                                 818
+BAR OR TAVERN                                       1458
+BARBER SHOP/BEAUTY SALON                               1
+BARBERSHOP                                           185
+BOAT/WATERCRAFT                                       31
+BOWLING ALLEY                                         21
+BRIDGE                                                22
+CAR WASH                                              92
+                                                   ...  
+PORCH                                                 15
+RAILROAD PROPERTY                                      1
+RESIDENCE                                          36003
+RESIDENCE PORCH/HALLWAY                             3696
+RESIDENCE-GARAGE                                    4348
+RESIDENTIAL YARD (FRONT/BACK)                       4783
+RESTAURANT                                          4496
+RETAIL STORE                                           5
+SAVINGS AND LOAN                                      10
+SCHOOL YARD                                            1
+SCHOOL, PRIVATE, BUILDING                            465
+SCHOOL, PRIVATE, GROUNDS                             160
+SCHOOL, PUBLIC, BUILDING                            3063
+SCHOOL, PUBLIC, GROUNDS                              916
+SIDEWALK                                           19889
+SMALL RETAIL STORE                                  4652
+SPORTS ARENA/STADIUM                                 292
+STREET                                             49978
+TAVERN                                                 2
+TAVERN/LIQUOR STORE                                  409
+TAXICAB                                              382
+VACANT LOT                                             9
+VACANT LOT/LAND                                      755
+VEHICLE - DELIVERY TRUCK                              17
+VEHICLE - OTHER RIDE SERVICE                          93
+VEHICLE NON-COMMERCIAL                              3839
+VEHICLE-COMMERCIAL                                   186
+VESTIBULE                                              1
+WAREHOUSE                                            199
+YARD                                                  10
+dtype: int64location_type
+Point    207043
+dtype: int64primary_type
+ARSON                                  438
+ASSAULT                              15691
+BATTERY                              42058
+BURGLARY                             11296
+CONCEALED CARRY LICENSE VIOLATION       30
+CRIM SEXUAL ASSAULT                   1199
+CRIMINAL DAMAGE                      25660
+CRIMINAL TRESPASS                     5264
+DECEPTIVE PRACTICE                   13683
+GAMBLING                               182
+HOMICIDE                               600
+HUMAN TRAFFICKING                       10
+INTERFERENCE WITH PUBLIC OFFICER       774
+INTIMIDATION                           106
+KIDNAPPING                             179
+LIQUOR LAW VIOLATION                   201
+MOTOR VEHICLE THEFT                   9059
+NARCOTICS                            10457
+NON - CRIMINAL                           5
+NON-CRIMINAL                            39
+NON-CRIMINAL (SUBJECT SPECIFIED)         1
+OBSCENITY                               40
+OFFENSE INVOLVING CHILDREN            1934
+OTHER NARCOTIC VIOLATION                 3
+OTHER OFFENSE                        14013
+PROSTITUTION                           720
+PUBLIC INDECENCY                        10
+PUBLIC PEACE VIOLATION                1356
+ROBBERY                               9484
+SEX OFFENSE                            790
+STALKING                               131
+THEFT                                49795
+WEAPONS VIOLATION                     2836
+dtype: int64domesticArrest
+0    211988
+1      6056
+dtype: int64indexCrime
+0    124542
+1     93502
+dtype: int64recentCrime
+0    176945
+1     41099
+dtype: int64day_of_week
+1    31305
+2    30840
+3    29793
+4    30574
+5    32809
+6    31708
+7    31015
+dtype: int64latitude10eqwibins
+(41.644, 41.682]      4104
+(41.682, 41.72]      11070
+(41.72, 41.758]      25969
+(41.758, 41.796]     32511
+(41.796, 41.834]     16644
+(41.834, 41.871]     20563
+(41.871, 41.909]     47732
+(41.909, 41.947]     24798
+(41.947, 41.985]     15987
+(41.985, 42.0227]     7665
+dtype: int64
+The variables, data types, and non-missing values after cleaning are:
+None
+Compared to 595 missing values for location_description out of 218044 total records.
+Compared to 11001 missing values for longitude out of 218044 total records.
+Compared to 11001 missing values for latitude out of 218044 total records.
+Compared to 11001 missing values for location_type out of 218044 total records.
+Compared to 11001 missing values for location_1 out of 218044 total records.
+Compared to 11001 missing values for location_2 out of 218044 total records.
+Compared to 11001 missing values for x_coord out of 218044 total records.
+Compared to 11001 missing values for y_coord out of 218044 total records.
+Compared to 1008 noise values for beat out of 218044 total records.
+Compared to 46 noise values for iucr out of 218044 total records.
+
