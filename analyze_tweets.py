@@ -6,6 +6,7 @@ import csv
 from textblob import TextBlob
 import re
 
+
 def main(argv):
     get_es_tweets()
 
@@ -96,9 +97,10 @@ emoji = {Sentiments.POSITIVE: '😀|😁|😂|😃|😄|😅|😆|😇|😈|😉
 # Determine sentiment from emoji first, then text
 def get_sentiment(status):
     sentiment = get_emoji_sentiment(status)
-    if sentiment == None:
+    if sentiment is None:
         sentiment = get_text_sentiment(status)
     return sentiment
+
 
 def get_text_sentiment(status):
     blob = TextBlob(status)

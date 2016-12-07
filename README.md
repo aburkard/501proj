@@ -1,11 +1,16 @@
 # 501proj
 
 
-Note the Twitter script requires the tweepy and elasticsearch packages:
+Note the Twitter script requires the following packages:
 
 	pip install tweepy
 	pip install elasticsearch
 	pip install certifi
+	pip install TextBlob
+	pip install gensim
+	pip install Pattern
+	
+It's possible that you may have to install additional nltk packages using nltk.download()
 
 Twitter API settings are defined in config.ini. We've included an API key for a dummy Twitter account. To pull tweets, generate new attributes, and output cleanliness data just run:
 
