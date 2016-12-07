@@ -31,14 +31,17 @@ def run_lda(docs, df):
 
     # Create a model with 20 topics
     Lda = gensim.models.ldamodel.LdaModel
-    ldamodel = Lda(doc_term_matrix, num_topics=20, id2word=dictionary)
+    ldamodel = Lda(doc_term_matrix, num_topics=20,
+                   id2word=dictionary, iterations=500, passes=5)
     print(ldamodel.print_topics(num_topics=20, num_words=10))
 
     # Get top topic for each tweet
     df["topics"] = df["cleaned_text"].apply(
         lambda x: ldamodel[dictionary.doc2bow(x)])
-    df["top_topic"] = df["topics"].apply(lambda x: max(x, key=itemgetter(1))[0])
-    df["top_score"] = df["topics"].apply(lambda x: max(x, key=itemgetter(1))[1])
+    df["top_topic"] = df["topics"].apply(
+        lambda x: max(x, key=itemgetter(1))[0])
+    df["top_score"] = df["topics"].apply(
+        lambda x: max(x, key=itemgetter(1))[1])
     df.to_csv("tweets_with_topics.csv", sep=',', encoding='utf-8')
 
 
