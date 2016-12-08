@@ -2,6 +2,13 @@
 
 The project report is available at https://sites.google.com/a/georgetown.edu/chi-crime-twitter/
 
+The project is organized into folders:
+- `scripts` contains all of them python scripts and supporting files
+- `data` is initially empty and is used by the scripts for file I/O
+- `viz` contains visualization screenshots. Live interactive versions are available on the project report site.
+- `output` contains some script console output
+- `data_archive` contains the resulting output from running the scripts.
+
 Note the scripts requires the following packages installed:
 ```
 	pip install tweepy
@@ -11,7 +18,7 @@ Note the scripts requires the following packages installed:
 	pip install gensim
 	pip install fim
 ```
-To run the entire process:
+To run the entire process yourself:
 ```
 python pull_tweets.py
 python analyze_tweets.py
