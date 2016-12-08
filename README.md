@@ -34,3 +34,7 @@ For the Chicago crime data:
 ChicagoCrime2016W3newfeatures.tsv contains the Chicago crime data with additional features. Note that this is a tab seperated file, since many of the fields contain commas and possibly quotes.
 
 tweets_10k_augmented.csv contains the Twitter data with additional features.
+
+All interative visuals except the donut chart, which was created with Bokeh, were created using Tableau.
+
+
