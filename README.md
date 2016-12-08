@@ -19,6 +19,7 @@ python tweets_lda.py
 python ChicagoCrimeDataCombined_2016_10_04.py
 python chicago_crime.py
 python CaryLou_projectpart2_chidata.py
+python donut_chart.py
 ```
 It's possible that you may have to install additional nltk packages using nltk.download()
 
@@ -36,5 +37,3 @@ ChicagoCrime2016W3newfeatures.tsv contains the Chicago crime data with additiona
 tweets_10k_augmented.csv contains the Twitter data with additional features.
 
 All interative visuals except the donut chart, which was created with Bokeh, were created using Tableau.
-
-

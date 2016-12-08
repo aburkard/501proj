@@ -6,7 +6,7 @@ import pandas as pd
 
 # utilize utility to make it easy to get json/dict data converted to a dataframe
 #df = df_from_json(data)
-df = pd.read_csv("chidata2016cleaned.tsv", sep='\t', encoding='utf-8')
+df = pd.read_csv("../data/chidata2016cleaned.tsv", sep='\t', encoding='utf-8')
 #df.groupby(['primary_type', 'description']).count()
 df = pd.DataFrame({'count': df.groupby(
     ["primary_type", "description"]).size()}).reset_index()
