@@ -1,0 +1,66 @@
+T-test to test hypothesis that the time of index (more serious and non-index crimes are the same: /nTtest_indResult(statistic=-1.4553981425050551, pvalue=0.14559131169233894)
+regression to see if we can predict the time of a crime based on its location, day, and whether it was domestic, an index crime, or resulted in an arrest: 
+Coefficients: 
+[-0.2407715   0.82581318 -0.91678836 -2.16220263 -1.06853198 -0.12069467]Mean squared error: 46.0480730856Variance score: 0.00155420160457
+Machine learning techniquest to try and classify whether crimes fall under the index category (more serious): 
+NB: 0.648085 (0.018390)
+CART: 0.566820 (0.012838)
+RF: 0.599325 (0.013968)
+KNN: 0.611827 (0.015933)
+SVM: 0.546941 (0.016300)
+
+The results of the NBmodel on the validation set for classification of index crimes are: 
+0.65
+[[495 587]
+ [113 805]]
+             precision    recall  f1-score   support
+
+          0       0.81      0.46      0.59      1082
+          1       0.58      0.88      0.70       918
+
+avg / total       0.71      0.65      0.64      2000
+
+The results of the CARTmodel on the validation set for classification of index crimes are: 
+0.58
+[[658 424]
+ [416 502]]
+             precision    recall  f1-score   support
+
+          0       0.61      0.61      0.61      1082
+          1       0.54      0.55      0.54       918
+
+avg / total       0.58      0.58      0.58      2000
+
+The results of the RFmodel on the validation set for classification of index crimes are: 
+0.5955
+[[736 346]
+ [463 455]]
+             precision    recall  f1-score   support
+
+          0       0.61      0.68      0.65      1082
+          1       0.57      0.50      0.53       918
+
+avg / total       0.59      0.60      0.59      2000
+
+The results of the KNNmodel on the validation set for classification of index crimes are: 
+0.61
+[[699 383]
+ [397 521]]
+             precision    recall  f1-score   support
+
+          0       0.64      0.65      0.64      1082
+          1       0.58      0.57      0.57       918
+
+avg / total       0.61      0.61      0.61      2000
+
+The results of the SVMmodel on the validation set for classification of index crimes are: 
+0.541
+[[1082    0]
+ [ 918    0]]
+             precision    recall  f1-score   support
+
+          0       0.54      1.00      0.70      1082
+          1       0.00      0.00      0.00       918
+
+avg / total       0.29      0.54      0.38      2000
+
